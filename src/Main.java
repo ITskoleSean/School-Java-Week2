@@ -9,7 +9,8 @@ public class Main {
     public static void main(String[] args) {
 	    Assignment assignment = new Assignment();
 	    // Use the assignment reference to call methods (see: extra assignment)
+        System.out.println(assignment.addNumbers(1, 2, 3, 4));
+
         System.out.println(assignment.addNumbers(1, 2));
-        System.out.println(assignment.firstOccurrence("Hei, jeg heter PerryL", 'L'));
     }
 }

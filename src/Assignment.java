@@ -15,15 +15,15 @@ public class Assignment {
      * Medium (not small or big)
      */
     public String isNumberSmallMediumOrBig(int number){
-        if(number > 100){
+        if(number <100){
             return "Small";
         }
-        else if(number < 1001){
+        else if(number > 1000){
             return "Big";
         }
-        else
+        else{
             return "Medium";
-
+        }
     }
 
 
@@ -149,8 +149,8 @@ public class Assignment {
      * Returns the sum of all the received numbers.
      */
 
-    public int sums;
     public int addNumbers(int... numbers){
+    int sums = 0;
         for(Integer i : numbers){
             sums+=i;
         }
@@ -169,5 +169,4 @@ public class Assignment {
             }
         }
     }
-
 }
