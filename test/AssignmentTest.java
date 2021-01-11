@@ -96,6 +96,7 @@ class AssignmentTest {
     public void testFirstOccurrence() {
         assertTrue(assignment.firstOccurrence("blue", 'l')==1);
         assertTrue(assignment.firstOccurrence("blue", 'x')==-1);
+        assertFalse(assignment.firstOccurrence("Heisann", 'i')==5);
     }
 
     @Test
@@ -107,6 +108,7 @@ class AssignmentTest {
     public void testAddNumbers() {
         assertTrue(assignment.addNumbers(1,2,3,4)==10);
         assertTrue(assignment.addNumbers(1,2)==3);
+        assertTrue(assignment.addNumbers(1,3,9,10)==23);
     }
 
     @Test
@@ -115,7 +117,4 @@ class AssignmentTest {
         assignment.printAllStringsNotCoronaCaseInsensitive(strings);
         assertEquals("Thesearefuntimes!", outputStreamCaptor.toString().replaceAll("\\p{Cntrl}", ""));
     }
-
-
-
 }
